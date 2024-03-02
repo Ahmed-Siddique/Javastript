@@ -127,15 +127,35 @@
       // console.log("Welcome to our site!", a);
 
       // let b = prompt("Sameer"          )
-      // console.log("welcome to sameer website");    
-       
+      // console.log("welcome to sameer website");
+
       // let c = prompt("enter your roll number ")
       // console.log("your website  is colourless end very bed end but loking good, 'THANKS'  ");
       // let a = prompt("What would you like to buy")
       // console.log("Your order is confirmed, 'THANKS FOR BUYING' ");
-   
-      
+      // document.write("klaseug ufev ag");
 
-   </script>
+      // Equels
+      // =      this is for variable declair
+      // ==     this is for chack the condition
+      // ===    this is for check the condition with type of variable
+
+      let order = prompt("Select your Food");
+      // console.log(typeof gander);
+
+      if (order === "biryani") {
+        let types = prompt("Select your Type of Biryani");
+        if (types == "small") {
+          console.log("Your " + types + " " + order + " is on the way");
+        } else if (types == "normal") {
+          console.log("Your " + types + " " + order + " is on the way");
+        }
+      } else if (order === "burger") console.log("Your Order confirmed", order);
+      else if (order === "pizza") console.log("Your Order confirmed", order);
+      else if (order === "roll") console.log("Your Order confirmed", order);
+      else if (order === "tikka") console.log("Your Order confirmed", order);
+      else if (order === "fries") console.log("Your Order confirmed", order);
+      else console.log("Not Sure");
+    </script>
   </body>
 </html>
