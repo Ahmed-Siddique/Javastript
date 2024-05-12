@@ -5,20 +5,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>javaScrpit</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>hello world</h1>
 
+  <div id="box">
+
+  </div>
+
+  <form action="">
+    <input type="text" id="name">
+    <button>CLick</button>
+  </form>
   <script>
     //  We can see the output of our javascript code using 3 ways
     //  1: Alert                this will show an alert box / dilog box is browser
     //  2: console.log          this will show error / warning / and output in web console
     //  3: document.write       this will write your js content in browser
+    //   \n for break lines in alert
 
-    // alert("Hello World! How are you")
-    // console.log("How are you doing today")
-    // document.write("How are you doing today")
+
+    //alert("Hello World! How are you")
+    //console.log("How are you doing today")
+    //document.write("How are you doing today")
 
     // we can diclear Variables in 3 way
     //    var       let     const
@@ -205,14 +216,28 @@
     // console.log(arr.reverse());
     // console.log(b.sort());
 
-
-
     // ========== For Loop =========
     // we use for do repeted work
 
-    // for (let i = 0; i <= 10; i--) {
+    // for (let i = 0; i <= 10; i++) {
     //   console.log(i);
     // }
+
+    // let name = document.getElementById("name").value
+
+    // let numbers = ['Sameer', "Ali", "Mursaleen", "Abdullah", "Ahmed", "Sarfaraz", `Shahroz`, 'Muhammad', "Hammad", "Ammar"]
+    // let box = document.getElementById('box')
+    // let a = document.getElementsByClassName('box')
+    // box.style.textAlign = "center"
+    // for (let i = 0; i < numbers.length; i++) {
+    //   box.innerHTML += `<div class='content'>
+    //     <h4 class='content'>
+    //     ${numbers[i]}
+    //     </h4>
+    //     </div>`
+    //   // "<div class='content'>" + numbers[i] + "</div>"
+    // }
+
 
   </script>
 </body>
