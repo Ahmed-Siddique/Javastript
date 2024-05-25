@@ -18,6 +18,14 @@
     <input type="text" id="name">
     <button>CLick</button>
   </form> -->
+
+    <h1 id="name"></h1>
+    <!-- <button onclick="{gread()}">CLick</button> -->
+    <!-- <h2>Counter</h2>
+    <h3 id="num"></h3>
+    <buttton onclick="{plus()}">Plus +</buttton>
+    <buttton onclick="{minus()}">Munus -</buttton>
+    -->
     <script>
       //  We can see the output of our javascript code using 3 ways
       //  1: Alert                this will show an alert box / dilog box is browser
@@ -292,9 +300,53 @@
       // =========== API And Data Fatching ===========
       // Post: This is post or carry the data for our website
       // Get: This is get or bring the data for our website
-      fetch("https://dummyjson.com/products")
-        .then((res) => res.json())
-        .then((json) => console.log(json));
+      // fetch("https://dummyjson.com/products")
+      //   .then((res) => res.json())
+      //   .then((json) => console.log(json));
+
+      // ================= Function ===========
+      // Types of funcion
+      // Aero function
+      // Function
+
+      // function stopWatch() {
+      //   console.log("Hello Warld");
+      // }
+
+      // stopWatch();
+
+      // const counter = () => {
+      //   console.log("this is a aero function");
+      // };
+
+      // counter();
+
+      // let count = 0;
+      // let num = document.getElementById("num");
+
+      // let plus = () => {
+      //   count = count + 1;
+      //   num.innerHTML = count;
+      // };
+
+      // let minus = () => {
+      //   if (count > 0) {
+      //     count = count - 1;
+      //     num.innerHTML = count;
+      //   }
+      // };
+
+      // let gread = () => {
+      //   let a = prompt("Enter your Name");
+      //   document.getElementById("name").innerHTML += `<br/> Hello! ${a}`;
+      // };
+
+      const multiply = (num1, num2) => {
+        console.log(num1, num2);
+        console.log(`${num1} * ${num2} =`, num1 * num2);
+      };
+
+      multiply(10, 2);
     </script>
   </body>
 </html>
