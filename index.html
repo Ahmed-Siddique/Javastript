@@ -1,245 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScrpit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>javaScrpit</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <h1>hello world</h1>
-
+  <body>
+    <h1>hello world</h1>
+    <!-- 
   <div id="box">
 
-  </div>
-
+  </div> -->
+    <!-- 
   <form action="">
     <input type="text" id="name">
     <button>CLick</button>
-  </form>
-  <script>
-    //  We can see the output of our javascript code using 3 ways
-    //  1: Alert                this will show an alert box / dilog box is browser
-    //  2: console.log          this will show error / warning / and output in web console
-    //  3: document.write       this will write your js content in browser
-    //   \n for break lines in alert
+  </form> -->
+    <script>
+      //  We can see the output of our javascript code using 3 ways
+      //  1: Alert                this will show an alert box / dilog box is browser
+      //  2: console.log          this will show error / warning / and output in web console
+      //  3: document.write       this will write your js content in browser
+      //   \n for break lines in alert
 
+      //alert("Hello World! How are you")
+      //console.log("How are you doing today")
+      //document.write("How are you doing today")
 
-    //alert("Hello World! How are you")
-    //console.log("How are you doing today")
-    //document.write("How are you doing today")
+      // we can diclear Variables in 3 way
+      //    var       let     const
+      // full form of var is Variable
+      // full form of const is constant
 
-    // we can diclear Variables in 3 way
-    //    var       let     const
-    // full form of var is Variable
-    // full form of const is constant
+      // ============ types of variable ==========
 
-    // ============ types of variable ==========
+      // string:   is called text                      Example:  Name                 "Sameer" Sameer
+      // integer:  is called number                    Example:  2
+      // float:    is called number with dacimal       Example:  1.2
+      // boolean:  is called true or falles            Example:  true / false
+      // undefine: we use when we don't define
+      // null:
 
-    // string:   is called text                      Example:  Name                 "Sameer" Sameer
-    // integer:  is called number                    Example:  2
-    // float:    is called number with dacimal       Example:  1.2
-    // boolean:  is called true or falles            Example:  true / false
-    // undefine: we use when we don't define
-    // null:
+      // var name = "Sameer"; // This is string
+      // var number = 5;      // This is Integer
+      // var num2 = 1.2;      // This is float
+      // var bol = true;      // This is boolean
+      // var und;             // This is undefine
+      // var nu = null;       // This is null
+      // var name2 = "";      // This is empty string
 
-    // var name = "Sameer"; // This is string
-    // var number = 5;      // This is Integer
-    // var num2 = 1.2;      // This is float
-    // var bol = true;      // This is boolean
-    // var und;             // This is undefine
-    // var nu = null;       // This is null
-    // var name2 = "";      // This is empty string
+      // var a = 18  // we can declarie normaly
+      // var a = 10  // we can use again a same property
+      // var a       // we can leave undefine
 
-    // var a = 18  // we can declarie normaly
-    // var a = 10  // we can use again a same property
-    // var a       // we can leave undefine
+      // let b = 5     // we can declarie normaly
+      // let b = 10   // we can't use again a same property
+      // let c        // we can leave undefine
 
-    // let b = 5     // we can declarie normaly
-    // let b = 10   // we can't use again a same property
-    // let c        // we can leave undefine
+      // const d = 10 // we can declarie normaly
+      // const d      // we can't use again a same property
+      // const e      // we can't leave undefine
 
-    // const d = 10 // we can declarie normaly
-    // const d      // we can't use again a same property
-    // const e      // we can't leave undefine
+      // let num = 5
+      // let num2 = 5
+      // let total = (num + num2) * 2 + (num2 - num)
 
-    // let num = 5
-    // let num2 = 5
-    // let total = (num + num2) * 2 + (num2 - num)
+      // let name = "Sameer"
+      // let name1 = "Ali"
+      // let FullName = name + " " + name1
+      // console.log(total);
+      // console.log(FullName);
 
-    // let name = "Sameer"
-    // let name1 = "Ali"
-    // let FullName = name + " " + name1
-    // console.log(total);
-    // console.log(FullName);
+      // ================== Math expressions: Familiar operators ===================
 
-    // ================== Math expressions: Familiar operators ===================
+      //         +  -  *  /  &
+      // console.log("Plus 10 + 5 = ", 10 + 5);
+      // console.log("Minus 10 - 5 = ", 10 - 6);
+      // console.log("Devide 10 / 5 = ", 10 / 5);
+      // console.log("Multiply 10 * 5 = ", 10 * 5);
+      // console.log("Modulas 10 & 5 = ", 9 & 3);
 
-    //         +  -  *  /  &
-    // console.log("Plus 10 + 5 = ", 10 + 5);
-    // console.log("Minus 10 - 5 = ", 10 - 6);
-    // console.log("Devide 10 / 5 = ", 10 / 5);
-    // console.log("Multiply 10 * 5 = ", 10 * 5);
-    // console.log("Modulas 10 & 5 = ", 9 & 3);
+      // ================== Math expressions: Unfamiliar operators ===================
+      //                               Increment Dicrement
+      //     Post incrememt: a++  Pre increment:  ++a
+      //     Post Dicrement: a--  Pre Dicrement: --a
 
-    // ================== Math expressions: Unfamiliar operators ===================
-    //                               Increment Dicrement
-    //     Post incrememt: a++  Pre increment:  ++a
-    //     Post Dicrement: a--  Pre Dicrement: --a
+      // let a = 3
+      // console.log("value of a is ", a--);
+      // console.log(a++);
+      // console.log(a, "answer");
+      // 2  2
+      // let b = a-- + ++a - a++
+      // console.log(++a);
 
-    // let a = 3
-    // console.log("value of a is ", a--);
-    // console.log(a++);
-    // console.log(a, "answer");
-    // 2  2
-    // let b = a-- + ++a - a++
-    // console.log(++a);
+      //   let c = a-- + ++a - a++;
+      //   console.log(++a);
 
-    //   let c = a-- + ++a - a++;
-    //   console.log(++a);
+      // let a = 3;
+      // let b = "3";
+      // document.write(
+      //   5 * 1,
+      //   " <br> ",
+      //   5 * 2,
+      //   " <br> ",
+      //   5 * 3,
+      //   " <br> ",
+      //   5 * 4,
+      //   " <br> ",
+      //   5 * 5,
+      //   " <br> ",
+      //   5 * 6,
+      //   " <br> ",
+      //   5 * 7,
+      //   " <br> ",
+      //   5 * 8,
+      //   " <br> ",
+      //   5 * 9,
+      //   " <br/>",
+      //   5 * 10
+      // );
 
-    // let a = 3;
-    // let b = "3";
-    // document.write(
-    //   5 * 1,
-    //   " <br> ",
-    //   5 * 2,
-    //   " <br> ",
-    //   5 * 3,
-    //   " <br> ",
-    //   5 * 4,
-    //   " <br> ",
-    //   5 * 5,
-    //   " <br> ",
-    //   5 * 6,
-    //   " <br> ",
-    //   5 * 7,
-    //   " <br> ",
-    //   5 * 8,
-    //   " <br> ",
-    //   5 * 9,
-    //   " <br/>",
-    //   5 * 10
-    // );
+      //   let b = 1;
+      //   let a = 1;
+      //   console.log(++a, "per");
+      //   console.log(b++, "Post");
+      //   console.log(b, "b");
 
-    //   let b = 1;
-    //   let a = 1;
-    //   console.log(++a, "per");
-    //   console.log(b++, "Post");
-    //   console.log(b, "b");
+      //   let a = "Name";
+      //   let b = "Abdullah";
+      //   console.log(a + " " + b);
 
-    //   let a = "Name";
-    //   let b = "Abdullah";
-    //   console.log(a + " " + b);
+      // ================== Prompt ===================
+      // let a = prompt("Enter your name");
+      // console.log("Welcome to our site!", a);
 
-    // ================== Prompt ===================
-    // let a = prompt("Enter your name");
-    // console.log("Welcome to our site!", a);
+      // let b = prompt("Sameer"          )
+      // console.log("welcome to sameer website");
 
-    // let b = prompt("Sameer"          )
-    // console.log("welcome to sameer website");
+      // let c = prompt("enter your roll number ")
+      // console.log("your website  is colourless end very bed end but loking good, 'THANKS'  ");
+      // let a = prompt("What would you like to buy")
+      // console.log("Your order is confirmed, 'THANKS FOR BUYING' ");
+      // document.write("klaseug ufev ag");
 
-    // let c = prompt("enter your roll number ")
-    // console.log("your website  is colourless end very bed end but loking good, 'THANKS'  ");
-    // let a = prompt("What would you like to buy")
-    // console.log("Your order is confirmed, 'THANKS FOR BUYING' ");
-    // document.write("klaseug ufev ag");
+      // Equels
+      // =      this is for variable declair
+      // ==     this is for chack the condition
+      // ===    this is for check the condition with type of variable
 
-    // Equels
-    // =      this is for variable declair
-    // ==     this is for chack the condition
-    // ===    this is for check the condition with type of variable
+      // let order = prompt("Select your Food");
 
-    // let order = prompt("Select your Food");
+      // // console.log(typeof gander);
 
-    // // console.log(typeof gander);
+      // if (order === "biryani") {
+      //   let types = prompt("Select your Type of Biryani");
+      //   if (types == "small") {
+      //     console.log("Your " + types + " " + order + " is on the way");
+      //   } else if (types == "normal") {
+      //     console.log("Your " + types + " " + order + " is on the way");
+      //   }
+      // } else if (order === "burger") console.log("Your Order confirmed", order);
+      // else if (order === "pizza") console.log("Your Order confirmed", order);
+      // else if (order === "roll") console.log("Your Order confirmed", order);
+      // else if (order === "tikka") console.log("Your Order confirmed", order);
+      // else if (order === "fries") console.log("Your Order confirmed", order);
+      // else console.log("Not Sure")
 
-    // if (order === "biryani") {
-    //   let types = prompt("Select your Type of Biryani");
-    //   if (types == "small") {
-    //     console.log("Your " + types + " " + order + " is on the way");
-    //   } else if (types == "normal") {
-    //     console.log("Your " + types + " " + order + " is on the way");
-    //   }
-    // } else if (order === "burger") console.log("Your Order confirmed", order);
-    // else if (order === "pizza") console.log("Your Order confirmed", order);
-    // else if (order === "roll") console.log("Your Order confirmed", order);
-    // else if (order === "tikka") console.log("Your Order confirmed", order);
-    // else if (order === "fries") console.log("Your Order confirmed", order);
-    // else console.log("Not Sure")
+      // document.write(5 * 8," <br> ", 5 * 2,)>`
+      // let a = "8"
+      // let b = "8"
+      // console.log(a++ - b++);
 
-    // document.write(5 * 8," <br> ", 5 * 2,)>`
-    // let a = "8"
-    // let b = "8"
-    // console.log(a++ - b++);
+      //  ================ Comparison operators ===================
+      //  <   This is use for check the conditin for example if 1 in less than 5 this is work oterview not
+      //  >   This is use for check the conditin for example if 1 in more than 5 this is work oterview not
+      //  >=  This is use for check the conditin for example if 1 in more than and equal 5 this is work oterview not
+      //  <=  This is use for check the conditin for example if 1 in less than and equal 5 this is work oterview not
 
-    //  ================ Comparison operators ===================
-    //  <   This is use for check the conditin for example if 1 in less than 5 this is work oterview not
-    //  >   This is use for check the conditin for example if 1 in more than 5 this is work oterview not
-    //  >=  This is use for check the conditin for example if 1 in more than and equal 5 this is work oterview not
-    //  <=  This is use for check the conditin for example if 1 in less than and equal 5 this is work oterview not
+      // let a = 10
+      // let b = 10
 
-    // let a = 10
-    // let b = 10
+      // if (a <= b) {
+      //   alert("This is equal")
+      // }
 
-    // if (a <= b) {
-    //   alert("This is equal")
-    // }
+      //  ============== Array =============
+      // Aray is a object. Aray is the group of variable. we can add every kind of data in array
+      // square bracket is called array []
 
-    //  ============== Array =============
-    // Aray is a object. Aray is the group of variable. we can add every kind of data in array
-    // square bracket is called array []
+      // let arr = [1, "Sameer", true, false, {}, [], undefined, function () { }]
+      // console.log(arr.length, "Lenght of array");
+      // console.log(arr[7], "index of array");
+      // console.log(arr);
+      // arr.push(5)
+      // arr.push("Mobile")
+      // console.log(arr);
 
-    // let arr = [1, "Sameer", true, false, {}, [], undefined, function () { }]
-    // console.log(arr.length, "Lenght of array");
-    // console.log(arr[7], "index of array");
-    // console.log(arr);
-    // arr.push(5)
-    // arr.push("Mobile")
-    // console.log(arr);
+      // hamary pas array ky lya kuch pre define function hoty hn
+      // example: push, pop, shift, unshift, slice, splice, sort, revers
+      // Push: add an element at the end of array
+      // UnShift: add an element at the start of array
+      // Pop: remove an element at the end of array
+      // Shift: remove an element at the start of array
+      // Revers: revers the array
+      // let arr = [1, "Sameer", true, false, {}, [], undefined, function () { }]
+      // let b = [1, 4, 7, 2, 9, 6, 3, 5, 8]
+      // arr.push("Check")
+      // arr.unshift("Check")
+      // arr.shift()
+      // arr.pop()
+      // console.log(arr.reverse());
+      // console.log(b.sort());
 
-    // hamary pas array ky lya kuch pre define function hoty hn
-    // example: push, pop, shift, unshift, slice, splice, sort, revers
-    // Push: add an element at the end of array
-    // UnShift: add an element at the start of array
-    // Pop: remove an element at the end of array
-    // Shift: remove an element at the start of array
-    // Revers: revers the array
-    // let arr = [1, "Sameer", true, false, {}, [], undefined, function () { }]
-    // let b = [1, 4, 7, 2, 9, 6, 3, 5, 8]
-    // arr.push("Check")
-    // arr.unshift("Check")
-    // arr.shift()
-    // arr.pop()
-    // console.log(arr.reverse());
-    // console.log(b.sort());
+      // ========== For Loop =========
+      // we use for do repeted work
 
-    // ========== For Loop =========
-    // we use for do repeted work
+      // for (let i = 0; i <= 10; i++) {
+      //   console.log(i);
+      // }
 
-    // for (let i = 0; i <= 10; i++) {
-    //   console.log(i);
-    // }
+      // let name = document.getElementById("name").value
 
-    // let name = document.getElementById("name").value
+      // let numbers = ['Sameer', "Ali", "Mursaleen", "Abdullah", "Ahmed", "Sarfaraz", `Shahroz`, 'Muhammad', "Hammad", "Ammar"]
+      // let box = document.getElementById('box')
+      // let a = document.getElementsByClassName('box')
+      // box.style.textAlign = "center"
+      // for (let i = 0; i < numbers.length; i++) {
+      //   box.innerHTML += `<div class='content'>
+      //     <h4 class='content'>
+      //     ${numbers[i]}
+      //     </h4>
+      //     </div>`
+      //   // "<div class='content'>" + numbers[i] + "</div>"
+      // }
 
-    // let numbers = ['Sameer', "Ali", "Mursaleen", "Abdullah", "Ahmed", "Sarfaraz", `Shahroz`, 'Muhammad', "Hammad", "Ammar"]
-    // let box = document.getElementById('box')
-    // let a = document.getElementsByClassName('box')
-    // box.style.textAlign = "center"
-    // for (let i = 0; i < numbers.length; i++) {
-    //   box.innerHTML += `<div class='content'>
-    //     <h4 class='content'>
-    //     ${numbers[i]}
-    //     </h4>
-    //     </div>`
-    //   // "<div class='content'>" + numbers[i] + "</div>"
-    // }
+      // let a = "";
 
+      // for (let i = 0; i < 10; i++) {
+      //   console.log(i);
 
-  </script>
-</body>
+      //   if (i == 1) {
+      //     a = "Ahmed";
+      //     console.log(a);
+      //   }
 
+      //   if (i == 5) {
+      //     a = "Sameer";
+      //     console.log(a);
+      //     break;
+      //   }
+      // }
+
+      //  =========== Nested Loop ========= Important ============
+      // for (let i = 0; i < 10; i++) {
+      //   // This will run 1 time
+      //   // console.log("I", i);
+      //   for (let j = 0; j < 10; j++) {
+      //     // This is run 10 time after that it will go back
+      //     // console.log("J", j);
+      //     console.log(i, j);
+      //   }
+      // }
+
+      // =========== Object ===========
+      // This is the sign of object {}
+      // let a = 10,
+      // var a = 10,
+      // const a = 10,
+      // let a = [],    This is Array
+      // let a = {}     This is Object
+
+      // let obj = {
+      //   name: "Ahmed",
+      //   fatherName: "Kamran",
+      //   rollNumber: 1,
+      //   interest: "Army",
+      // };
+
+      // let obj2 = {
+      //   name: "Sameer",
+      //   fatherName: "Saeed",
+      //   rollNumber: 2,
+      //   interest: "Army",
+      // };
+      // // console.log(obj.rollNumber);
+      // let arr = [obj, obj2];
+      // console.log(arr);
+
+      // =========== API And Data Fatching ===========
+      // Post: This is post or carry the data for our website
+      // Get: This is get or bring the data for our website
+      fetch("https://dummyjson.com/products")
+        .then((res) => res.json())
+        .then((json) => console.log(json));
+    </script>
+  </body>
 </html>
